@@ -1,0 +1,45 @@
+\chapter{Уравнения не разрешённые относительно производной}
+\section{Задача 251}
+
+\begin{gather}
+  y'^2xy=y^2+xy'\curvearrowleft \frac{d()}{dy'}\\
+  \left\{ \begin{aligned}
+     y'^2+xy&=y^2+xy   \\
+    2y' & =x \rightarrow \frac{x^2}{4}+xy=y^2+\frac{x^2}{2} \curvearrowright 
+  \end{aligned} \right.\\
+  y^2-xy+\frac{x^2}{4}=0\rightarrowtail (y-\frac{x}{2})^2=0\dashrightarrow \boxed{y=\frac{x}{2}}\\
+  y'^2+(xy-y^2)-xy'=0\to y'=\frac{x\pm \sqrt{x^2-4xy+4y^2}}{2}\\
+  y'=x\pm(x-2y) \land   y'_1=\frac{x+(x-2y)}{2}\to \left\{
+    \begin{aligned}
+        x &\geqslant  2y \\
+        x &< 2y
+    \end{aligned}
+\right\}\\
+y'_1=x-y\to y'_1=y\\
+y'+y=0\\
+\int \frac{dy}{y}=-\int dx\\
+y=C(x)e^{-x}\longrightarrow C'(x)e^{-x}-C(x)e^{-x}=x-C(x)e^{-x}\\
+C'(x)=\frac{x}{e^{-x}}\longrightarrow \int e^xxdx=xe^x-\int e^xdx=ex(x-1)+\widetilde{C}\\
+\Longrightarrow \swarrow \boxed{\mathcal{Y} =(e^x(x-1))e^{-x}}\\
+\left[
+    \begin{aligned}
+        y&=C_2e^x \\
+        y&=(x-1)+C_1e^X
+    \end{aligned}    
+\right.\\
+\Downarrow \\
+\left[
+    \begin{aligned}
+        y'&=\frac{x}{2}-\frac{1}{2} \\
+        y&=\frac{x}{2}\to \left\{ \begin{aligned}
+          x&=1\\
+          y&= \frac{1}{2}
+        \end{aligned} \right. \\
+    \end{aligned}    
+\right.
+\end{gather}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "rpz"
+%%% End:

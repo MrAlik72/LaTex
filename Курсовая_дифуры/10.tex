@@ -1,0 +1,73 @@
+\chapter{Неоднородные линейные дифференциальные уравнения с постоянными коэффициентами с правой частью специального вида}
+\section{Задача 546}
+
+
+\begin{gather}
+    y''+y=xsinx\\
+    1. y''+y=0\\
+    \lambda ^2+1=0\longrightarrow \lambda_{1,2}=\pm i\\
+    \boxed{\mathcal{Y}_{OO}=C_1cosx+C_2sinx}
+\end{gather}
+
+\begin{gather}
+\mathfrak{F}(x) =xsinx=e^{0x}(ocosx+xsinx)  \\
+    \begin{aligned}
+        \left. \begin{aligned}
+            a=0& \\
+            b=1&
+        \end{aligned} \right|
+        \rightrightarrows &a\pm bi=0\pm i\implies r=1 \\
+        \left. \begin{aligned}
+          n=0& \\
+          m=1&
+        \end{aligned} \right|
+          \Rightarrow &k=1\Longrightarrow 
+            \left\{
+                \begin{aligned}
+                    \tilde{T}_k(x)&= \tilde{T}_1(x)=Ax+B \\
+                    \tilde{S}_k(x)&=\tilde{S}_1(x)=Cx+D
+                \end{aligned}
+            \right\}
+    \end{aligned}\\
+\boxed{\mathcal{Y}_{\text{ЧН}}=e^{0x}((Ax+B)cosx+(Cx+D)sinx)}
+\end{gather}
+
+\begin{align*}
+    \text{1 } | &\mathcal{Y}=(Ax^2+Bx)\cos x+(Cx^2+Dx)\sin x \\
+    \text{0 } | &\mathcal{Y}'=(2Ax+B)\cos x-(Ax^2+Bx)\sin x+(2Cx+D)\sin x 
+            +\cos x(Cx^2+Dx) \\
+    \text{1 } | &\mathcal{Y}''=2A\cos x-(2Ax+B)\sin x-(2Ax+B)\sin x-(Ax^2+Bx)\cos x+ \\
+     &+2C \sin x+(2Cx+D\cos x)+2(Dx)\cos x-(Cx^2+Dx)\sin x
+\end{align*}
+
+\pagebreak
+
+При $\cos \longrightarrow  0$
+
+При $\sin \longrightarrow x $ 
+
+\[
+\mathfrak{F}(x) =xsinx+0cosx
+\]
+ 
+\begin{gather}
+    \begin{aligned}
+        \underline{\cos x}: &x^2 : A-A = 0 \\
+        &x' : B-B+eC+2C = 0 \implies C = 0 \\
+        &x^0 : 2A + D + D = 0 \implies D = -A
+    \end{aligned} \\
+    \begin{aligned}
+        \underline{\sin x}: &x^2 : C-C = 0 \\
+        &x' : D - 2A - 2A - D = 1 \implies A = - \frac{1}{4} \\
+        &x^0 : -B -B + 2C = 0 \implies B = C = 0
+    \end{aligned} \\
+    \boxed{\mathcal{Y}_{\text{чн}} = - \frac{1}{4}x^2 \cos x + \frac{1}{4} x sin x} \\
+    \mathcal{Y}_{\text{ОН}} = \mathcal{Y}_{\text{ОО}} + \mathcal{Y}_{\text{ЧН}} \\
+    \boxed{\mathcal{Y}_{\text{ОН}} = \underbrace{C_1 \cos x + C_2 \sin x}_{\mathcal{Y}_{\text{ОО}}} -
+        \underbrace{\frac{1}{4} x^2 \cos x + \frac{1}{4} x \sin x}_{\mathcal{Y}_{\text{ЧН}}}}
+\end{gather}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "rpz"
+%%% End:

@@ -1,0 +1,29 @@
+\section{Задача 252}
+
+\begin{gather}
+xy'^2-2yy'+x=0\\
+\mathfrak{D} =4y^2-4x^2\longmapsto y'=\frac{2y\pm2\sqrt{y^2-x^2}}{2x}=\frac{y\pm\sqrt{y^2-x^2}}{x}\\
+\left\{
+            \begin{aligned}
+                t=\frac{y}{x}
+            \end{aligned}
+        \right\}\Longrightarrow y'=\frac{y}{x}\pm\frac{\sqrt{\frac{y^2}{x^2}-1}}{x}\\
+        y'=t\pm\sqrt{t^2-1}\longrightarrow y'_x=t'_xx\pm t\\
+        \frac{dy}{dx}=t\pm\sqrt{t^2-1}\longrightarrow t'_xx+t=t\pm \sqrt{t^2-1}\\
+        \frac{dt}{dx}x=\pm\sqrt{t^2-1}\longrightarrow \int\frac{dt}{\sqrt{t^2-1}}=\int\pm\frac{dx}{x}\\
+        \pm\ln x=\ln|\sqrt{t^2-1}+t|+\ln{\widetilde{C}}-\text{решение}\\
+        y=\pm x-\text{решение}\\
+        \left\{
+            \begin{aligned}
+                x &=|\sqrt{t^2-1}+t|+\widetilde{C} \\
+                \frac{1}{x} &=|\sqrt{t^2-1}+t|=C \\
+                y &= \pm x
+            \end{aligned}
+        \right\}
+\end{gather}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "rpz"
+%%% End:

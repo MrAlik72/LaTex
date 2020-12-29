@@ -1,0 +1,30 @@
+\section{Задача 455}
+
+\begin{gather}
+  yy''' + 3y'y'' = 0 \\
+  \frac{y'''}{y''} = -3 \frac{y'}{y} \\
+  \left. \begin{aligned}
+     y &= 0  \\
+     y' &= 0 \rightarrow \boxed{ y = C } \\
+     y'' &= 0 \rightarrow \boxed{y = C_1x+C_2}
+  \end{aligned} \right] \\
+  (\ln |y''|)' = (-3\ln |y|)' \\
+  \ln |y''| = -3 \ln |y| + C \rightarrow y'' = \frac{c}{y^3} \\
+  y' = P(y) \rightarrow PP' = \frac{C}{y^3} \\
+  \int PdP = C \int \frac{dy}{y^3} \rightarrow \frac{P^2}{2} = - \frac{C}{2y^2}+ C_2 \\
+  P = y' = \sqrt{2C_2 - \frac{C}{2y^2}} \\
+  \frac{dy}{\sqrt{2C_2-\frac{c}{y^2}}} = \int dx = \frac{1}{2} \int \frac{dy}{\sqrt{2C_2y^2-C}} \\
+  \boxed{\begin{aligned} 
+    2C_2 - \frac{C}{y_2} = 0 \\
+    y = \sqrt{\frac{c}{2C_2}}
+  \end{aligned} } \\
+  \sqrt{2C_2y^2-C} = x+C^3 \rightarrow \left[ \begin{aligned}
+    &y = C_1 + C_2 \\
+    &2C_2 y^2 - C = (x+C_3)^2
+  \end{aligned} \right.
+\end{gather}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "rpz"
+%%% End:

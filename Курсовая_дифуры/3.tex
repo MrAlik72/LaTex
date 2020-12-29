@@ -1,0 +1,45 @@
+\section{Задача 213}
+
+\begin{gather}
+y(x+y^2)dx+x^2(y-1)dy=0\\
+xydx+y^3dx+x^2ydy-x^2dy=0\\
+(\nwarrow   :x^3\neq0 \nearrow )\\ \implies \boxed{x=0-\text{частное решение}}\\
+\frac{x(ydx-xdy)}{x^3}+\frac{y^3}{x^3}dx+\frac{x^2}{x^3}dy=0\\
+\boxed {t=\frac{y}{x}\leadsto y=xt}\\
+\frac{ydx-xdy}{x^2}+t^3dx+tdy=0\\
+(t^2+t)dx + (x-\frac{1}{t})dt=0\dashrightarrow \boxed{t=0-\text{частное решение}}\\
+\mathcal{M} \underset{\mathbb{P} }{(t^2+t)}dx+\mathcal{M}\underset{\mathbb{Q}}{ (x-\frac{1}{t})}dt \\
+\left\{ \begin{aligned}
+  \frac{\partial P}{\partial t} &= (2t+1)\mathcal{M}+\mathcal{M'}_t(t^2+t)\implies  \mathcal{M}=\mathcal{M}(t) \\
+  \frac{\partial Q}{\partial t} &= \mathcal{M'}_x(x-\frac{1}{t})
+\end{aligned} \right.\\
+\mathcal{M}(2t+1)+\mathcal{M'}_t(t^2+t)=\mathcal{M}\Rightarrow \\
+\frac{\mathcal{M}'_t}{\mathcal{M}}=-\frac{2t+1}{t(t+1)}\Longrightarrow \mathcal{M}=\frac{1}{(t+1)^2}\\
+\frac{t^2+t}{(t+1)^2}dx+\frac{x-\frac{1}{t}}{(t+1)^2}dt=0\implies U(x,t)=\frac{tx}{t+1}+C(t)\\
+\left\{ \begin{aligned}
+  \frac{\partial U}{\partial t} &= (\frac{t}{(t+1)})\Longrightarrow \frac{\partial U}{\partial t}=\frac{x(t+1)-xt}{(t^+1)^2}+C'(t)\\
+  \frac{\partial U}{\partial t} &= (\frac{xt-1}{t(t+1)^2})\rightarrow C'(t)=-\frac{1}{(t+1)^2t}
+\end{aligned} \right.\\
+C(t)=-\int\frac{dt}{t(t+1)^2}=-\ln t+\ln(t+1) + (-\frac{1}{(t+1)^2})+\widetilde{C}\\
+U(x,t)=\frac{tx}{t+1}+\widetilde{C}(t)=\widetilde{C}
+\end{gather}
+\begin{gather}
+\left[
+    \begin{aligned}
+        &\ln (\frac{y+x}{y}) +(\frac{1}{(\frac{y}{x}+1)^2})+\frac{y}{\frac{y}{x}+1} =\widetilde{C}\\
+        &\left\{
+            \begin{aligned}
+                x &= 0 \\
+                t &= 0, t' = -1 \\
+                y &= -x
+            \end{aligned}
+        \right\} \text{- Частные решение}
+    \end{aligned}    
+\right.
+\end{gather}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "rpz"
+%%% End:

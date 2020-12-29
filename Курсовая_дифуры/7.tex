@@ -1,0 +1,26 @@
+\chapter{Уравнения допускающие понижение порядка}
+\section{Задача 423}
+\begin{gather}
+  y^3 y'' = 1 \\
+  y'' = \frac{1}{y^3} \\
+  y' = p(y) \implies y'' = pp^2 \\
+  pp' = \frac{1}{y^3} \\
+  p \frac{dp}{dy} = \frac{1}{y^3} \rightarrow \int pdp = \int \frac{dy}{y^3} \\
+  \frac{p^2}{2} = - \frac{1}{2} \frac{1}{y^2} + \widetilde{C_1} \rightarrow p = 
+  \pm \sqrt{2 \widetilde{C_1}-\frac{1}{y^2}} \\
+  \frac{dy}{dx} = \pm \sqrt{2 \widetilde{C_1} - \frac{1}{y^2}} \\
+  \int \frac{dy}{\pm \sqrt{2\widetilde{C_1}-\frac{1}{y^2}}} = \int dx \\
+  \begin{split}
+    \pm \int \frac{ydy}{\sqrt{2\widetilde{C_1}y^2-1}} = \int dx = \pm \frac{1}{2}
+    \int \frac{dy^2}{\sqrt{2 \widetilde{C_1}y^2-1}} = \\
+    \pm \frac{1}{4 \widetilde{C_1}} 
+    = \int \frac{d(y^2 2\widetilde{C_1}-1)}{\sqrt{2 \widetilde{C_1}y^2-1}} \\
+    \implies \boxed{ x = \pm \frac{1}{4C_1} 2 \sqrt{2y^2 \widetilde{C_1} - 1} + C_2 }
+  \end{split}
+\end{gather}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "rpz"
+%%% End:

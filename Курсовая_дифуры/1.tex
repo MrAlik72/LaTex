@@ -1,0 +1,25 @@
+\chapter{Уравнения в полных дифференциалах}
+
+\section{Задача 186}
+\begin{gather}
+  2yxdx - (x^2-y^2)dx = 0 \\
+  \frac{\partial P}{\partial y}=\frac{\partial Q}{\partial x}=2x\implies \\
+  U = dU = Pdx+Qdy \\
+  dU=\frac{\partial U}{\partial x}dx + \frac{\partial U}{\partial y}dy\implies
+  \left\{ \begin{aligned}
+    \frac{\partial U}{\partial x} &= P = 2xy \\
+    \frac{\partial U}{\partial y} &= Q = x^2 - y^2
+  \end{aligned} \right. \\
+  U = \int 2xydx+C(y)=x^2y + C(y) \\
+  \frac{\partial x^2y+C(y)}{\partial y}=x^2-y^2\\
+  x^2+C'(y)=x^2-y^2 \implies 
+  C(y)=-\frac{y^3}{3}+\widetilde{C}\\
+   \boxed{ U(x,y)=x^2y-\frac{y^3}{3}+\widetilde{C} }
+\end{gather}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "rpz"
+%%% End:
+

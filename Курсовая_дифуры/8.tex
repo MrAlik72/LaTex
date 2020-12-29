@@ -1,0 +1,22 @@
+\section{Задача 426}
+
+\begin{gather}
+  yy''+1=y'^2 \\
+  \text{Пусть } y' = p; y'' = pp' \\
+  ypp' = p^2 -1 \\
+  yp \frac{dp}{dy}=p^2-1 \\
+  \frac{pdp}{p^2-1} = \frac{dy}{y} = \frac{2}{2} \frac{pdp}{p^2-1} = \frac{1}{2} \int \frac{dp^2-1}{p^2-1} \\
+  \frac{1}{2} \ln p^2 - 1 = \ln y + C_1 \\
+  \sqrt{p^2 - 1} = yC_1 \rightarrow p = \pm \sqrt{y^2C_1^2+1} \\
+  \frac{dx}{dy} = \pm \sqrt{y^2 C_1^2 + 1} \\
+  \begin{split}
+    \pm \int \frac{du}{\sqrt{y^2C_1^2+1}} = \int dx = \frac{1}{C_1} \frac{dC_1y}{\sqrt{y^2 C_1}} \\
+    \implies x + C_2 = \frac{1}{C_1} \ln |C_1 y + \sqrt{C_1y+1}|
+  \end{split}
+\end{gather}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "rpz"
+%%% End:
